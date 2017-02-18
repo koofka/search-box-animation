@@ -27,6 +27,7 @@ const AnimatedSearchBox = makeAnimatedValidationSearchBox(SearchBox);
 class App extends Component {
   render() {
     //https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
+    // Updated per: http://stackoverflow.com/questions/15464055/css-transition-effect-makes-image-blurry-moves-image-1px-in-chrome
     const style = {
       position: 'fixed',
       top: '50%',
