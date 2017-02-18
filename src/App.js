@@ -31,7 +31,8 @@ class App extends Component {
       position: 'fixed',
       top: '50%',
       left: '50%',
-      transform: 'translate(-50%, -50%)',
+      transform: 'translate3D(-50%, -50%, 0)',
+      WebkitBackfaceVisibility: 'hidden',
     };
     return (
       <MuiThemeProvider>
