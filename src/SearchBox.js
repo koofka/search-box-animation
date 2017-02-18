@@ -27,9 +27,9 @@ const SearchBox = ({isOpen, onClick, additionalStyles}) => {
     };
 
     let textStyle = isOpen ? baseStyles.open : baseStyles.closed;
-    textStyle = Object.assign({}, textStyle, additionalStyles ? additionalStyles.frame : {});
+    textStyle = Object.assign(textStyle, additionalStyles ? additionalStyles.text : {});
 
-    let divStyle = Object.assign({}, textStyle, baseStyles.frame);
+    const divStyle = Object.assign({}, textStyle, baseStyles.frame, additionalStyles ? additionalStyles.frame : {});
     divStyle.width += baseStyles.icon.width + 5;
     return (
       <div style={divStyle}>

@@ -8,9 +8,11 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 import SearchBox from './SearchBox';
-import makeExpanding from './expanding-animation';
+//import makeExpanding from './expanding-animation';
+//const ExpandingSearchBox = makeExpanding(SearchBox);
 
-const ExpandingSearchBox = makeExpanding(SearchBox);
+import makeMoveUp from './move-up-animation';
+const MoveUpSearchBox = makeMoveUp(SearchBox);
 
 class App extends Component {
   render() {
@@ -24,7 +26,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div style={style}>
-          <ExpandingSearchBox />
+          <MoveUpSearchBox />
         </div>
       </MuiThemeProvider>
     );
