@@ -11,8 +11,12 @@ import SearchBox from './SearchBox';
 //import makeExpanding from './expanding-animation';
 //const ExpandingSearchBox = makeExpanding(SearchBox);
 
-import makeMoveUp from './move-up-animation';
-const MoveUpSearchBox = makeMoveUp(SearchBox);
+//import makeMoveUp from './move-up-animation';
+//const MoveUpSearchBox = makeMoveUp(SearchBox);
+
+import makeSpringUp from './spring-up-animation';
+const SpringUpSearchBox = makeSpringUp(SearchBox);
+
 
 class App extends Component {
   render() {
@@ -26,7 +30,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div style={style}>
-          <MoveUpSearchBox />
+          <SpringUpSearchBox  />
         </div>
       </MuiThemeProvider>
     );
