@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 const animationStyle = {
   transition: 'width 0.75s cubic-bezier(0.000, 0.795, 0.000, 1.000)'
 }

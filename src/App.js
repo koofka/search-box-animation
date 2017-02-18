@@ -17,8 +17,11 @@ import SearchBox from './SearchBox';
 //import makeSpringUp from './spring-up-animation';
 //const SpringUpSearchBox = makeSpringUp(SearchBox);
 
-import makeShakeAnimation from './shake-animation';
-const ShakeAnimationSearchBox = makeShakeAnimation(SearchBox);
+//import makeShakeAnimation from './shake-animation';
+//const ShakeAnimationSearchBox = makeShakeAnimation(SearchBox);
+
+import makeAnimatedValidationSearchBox from './search-box-controller';
+const AnimatedSearchBox = makeAnimatedValidationSearchBox(SearchBox);
 
 
 class App extends Component {
@@ -33,7 +36,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div style={style}>
-          <ShakeAnimationSearchBox  />
+          <AnimatedSearchBox  />
         </div>
       </MuiThemeProvider>
     );
